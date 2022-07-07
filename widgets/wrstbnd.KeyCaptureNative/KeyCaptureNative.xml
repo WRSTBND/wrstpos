@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="wrstbnd.keycapturenative.KeyCaptureNative" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Native"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Native Barcode Scanner</name>
+    <description>Use the scanner to read qr codes and trigger actions</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="inputString" type="attribute" required="true">
+                <caption>Input Attribute</caption>
+                <description>This attribute will be set to the value of the barcode upon scan.</description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+            <property key="onScan" type="action" required="true">
+                <caption>On Scan Action</caption>
+                <description>This action will be triggered when the barcode gets scanned.</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

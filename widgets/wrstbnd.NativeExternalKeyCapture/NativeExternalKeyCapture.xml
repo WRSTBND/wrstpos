@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="wrstbnd.nativeexternalkeycapture.NativeExternalKeyCapture" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Native"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Native External Key Capture</name>
+    <description>Trigger actions when an external keyboard sends keypress events</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="readMode" type="enumeration" defaultValue="keyEvent">
+                <caption>Read Mode</caption>
+                <description>Hidden Input works in the debug app, but is unreliable. Key Event only works in a fully built app, but listens to all key events</description>
+                <enumerationValues>
+                    <enumerationValue key="hiddenInput">Hidden Input</enumerationValue>
+                    <enumerationValue key="keyEvent">Key Event</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="attributeToSet" type="attribute">
+                <caption>Attribute to Set</caption>
+                <description>This attribute will be updated with all the keys pressed since the last Enter press</description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+            <property key="onEnter" type="action">
+                <caption>On Enter Key Pressed</caption>
+                <description>Action to be performed when the Enter key is pressed</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

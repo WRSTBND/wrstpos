@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="MobileDevice.widget.MobileDevice" offlineCapable="true" needsEntityContext="true" xmlns="http://www.mendix.com/widget/1.0/">
+    <name>Mobile Device</name>
+    <description>Get device information</description>
+    <icon>iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAh1BMVEUAAACAgIBtbW1VVVVVxv9ZWVlVVVVKtfpLtPtXV1dXV1dKs/lJsPpWVlZWVlZIsPlKsflWVlZWVlZJsPdVVVVJsfdVVVVWVlZWVlZVVVVJsPhVVVVIsPhVVVVVVVVIsPdStPdVVVVXtven2fuo2fur2/u64fvH5/zY7vzn9P3v+P72+/7///8IvvFyAAAAH3RSTlMAAgcJCSgtMD1JTFpednd4eaCk4OHk5OX3+Pn5+vv8wta+cAAAAStJREFUeAHt1+uOgjAQBWBQtFWKVCtedHVk7wrv/3w7KRvYRHDSaTYxgfP30C8YSzMNhrRkslyf8pac1stJQCdM9nln9klIAov8YRbU+unxMXCcEsAKH9rOx23VeL7FckUAG3xm1lXOsNwQwBmfGXWVIyzPBJBjiJYAiPQFINqeAUKlqRJcINIGbIyOOIDMoE4m3YH4BTDvxZsVDrErIO16KL4LqATpBkT2/es3wGSRE6DhLtoJMPeAcQEEVPm43T5rQTgACqp8lWVZA8oBSOE3r3+AlAMAE1ANwPsJog0QrL+xAQxvIzWAZm1lBHhbOZAHsLleWR8TJq6Ey4X5OfsfKP5Hms+hSrQD8Owz0jAj+Y+6/sO2/7jvfeHwvvIEYbLrXr5Lwv+49g35Acv3lUcr1EYdAAAAAElFTkSuQmCC</icon>
+    <properties>
+        <property key="deviceTypeAttribute" type="attribute" required="false">
+            <caption>Platform</caption>
+            <category>Data source</category>
+            <description>The platform operating system, e.g. Android or iOS. If this widget is used in the browser the platform is "Web"</description>
+            <attributeTypes>
+                <attributeType name="String"/>
+            </attributeTypes>
+        </property>
+        <property key="deviceVersionAttribute" type="attribute" required="false">
+            <caption>Platform version</caption>
+            <category>Data source</category>
+            <description>The version of the operating system</description>
+            <attributeTypes>
+                <attributeType name="String"/>
+            </attributeTypes>
+        </property>
+        <property key="deviceIdAttribute" type="attribute" required="false">
+            <caption>Device ID</caption>
+            <category>Data source</category>
+            <description>The platform unique identification of the device manufacturer</description>
+            <attributeTypes>
+                <attributeType name="String"/>
+            </attributeTypes>
+        </property>
+        <property key="appVersionNameAttribute" type="attribute" required="false">
+            <caption>App name</caption>
+            <category>Data source</category>
+            <description>The name of the mobile app</description>
+            <attributeTypes>
+                <attributeType name="String"/>
+            </attributeTypes>
+        </property>
+        <property key="appVersionIdAttribute" type="attribute" required="false">
+            <caption>App ID</caption>
+            <category>Data source</category>
+            <description>The unique app identifier of the mobile app e.g com.example.myawesomeapp</description>
+            <attributeTypes>
+                <attributeType name="String"/>
+            </attributeTypes>
+        </property>
+        <property key="appVersionVersionAttribute" type="attribute" required="false">
+            <caption>App version</caption>
+            <category>Data source</category>
+            <description>Version of the mobile app</description>
+            <attributeTypes>
+                <attributeType name="String"/>
+            </attributeTypes>
+        </property>
+        <property key="onDeviceReadyAction" type="enumeration" defaultValue="doNothing">
+            <caption>On get device information</caption>
+            <category>Events</category>
+            <description>Action to execute when the device is ready</description>
+            <enumerationValues>
+                <enumerationValue key="doNothing">Do nothing</enumerationValue>
+                <enumerationValue key="showPage">Show a page</enumerationValue>
+                <enumerationValue key="callMicroflow">Call a microflow</enumerationValue>
+                <enumerationValue key="callNanoflow">Call a nanoflow</enumerationValue>
+            </enumerationValues>
+        </property>
+        <property key="microflow" type="microflow" required="false">
+            <caption>Microflow</caption>
+            <category>Events</category>
+            <description>Microflow to execute when the device information is retrieved</description>
+            <returnType type="Void" />
+        </property>
+        <property key="nanoflow" type="nanoflow" required="false">
+            <caption>Nanoflow</caption>
+            <category>Events</category>
+            <description>Nanoflow to execute when the device information is retrieved</description>
+            <returnType type="Void" />
+        </property>
+        <property key="page" type="form" required="false">
+            <caption>Page</caption>
+            <category>Events</category>
+            <description>The page to open when device information is retrieved</description>
+        </property>
+        <property key="openPageAs" type="enumeration" defaultValue="content">
+            <caption>Open page as</caption>
+            <category>Events</category>
+            <description/>
+            <enumerationValues>
+                <enumerationValue key="content">Full page</enumerationValue>
+                <enumerationValue key="popup">Popup</enumerationValue>
+                <enumerationValue key="modal">Blocking popup</enumerationValue>
+            </enumerationValues>
+        </property>
+        <property key="onNavigateBack" type="boolean" defaultValue="false">
+            <caption>Close page</caption>
+            <category>Advanced</category>
+            <description>Enable this setting when you want to close the current page so that the user cannot navigate back to the page</description>
+        </property>
+    </properties>
+</widget>
