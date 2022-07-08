@@ -416,6 +416,25 @@ export const posCartTotalValue = {
   }
 }
 
+export const posCartTotalLabelError = {
+  text: {
+    color: pos.error,
+    fontSize: 25,
+    lineHeight: 25,
+    margin: 5
+  }
+}
+  
+export const posCartTotalValueError = {
+  text: {
+    color: pos.error,
+    fontSize: 25,
+    lineHeight: 25,
+    fontWeight: 'bold',
+    margin: 5
+  }
+}
+
 export const posCartBalanceDue = {
   text: {
     ...posText.text,

@@ -438,6 +438,50 @@ export const themedButtonAvailable = {
   }
 }
 
+export const themedButtonAvailableSecondary = {
+  container: {
+    backgroundColor: pos.surface,
+    borderRadius: 14,
+    paddingHorizontal: 23,
+    paddingVertical: 12,
+    alignItems: "center",
+    width: "90%",
+    borderColor: pos.secondary,
+    borderWidth: 1,
+    marginTop: 10,
+    rippleColor: pos.secondaryTouch,
+    underlayColor: pos.secondaryTouch
+  },
+  caption: {
+    color: pos.secondary
+  },
+    icon: {
+    color: pos.secondary,
+  }
+}
+
+export const themedButtonAvailableSecondaryInverse = {
+  container: {
+    backgroundColor: pos.secondaryTouch,
+    borderRadius: 14,
+    paddingHorizontal: 23,
+    paddingVertical: 12,
+    alignItems: "center",
+    width: "90%",
+    borderColor: pos.secondary,
+    borderWidth: 1,
+    marginTop: 10,
+    rippleColor: pos.secondaryTouch,
+    underlayColor: pos.secondaryTouch
+  },
+  caption: {
+    color: pos.secondary
+  },
+    icon: {
+    color: pos.secondary,
+  }
+}
+
 export const themedButtonPrimary = {
   container: {
     backgroundColor: pos.surface,
