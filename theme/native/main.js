@@ -56,6 +56,14 @@ export const posPage = {
   }
 }
 
+export const posPageFlex = {
+  container: {
+    backgroundColor: pos.background,
+    height: "100%",
+    flexDirection: "column"
+  }
+}
+
 export const payButton = {
   container: {
     borderRadius: 14,
@@ -726,6 +734,7 @@ export const posFooter = {
     elevation: 4,
     marginHorizontal: 10,
     width: "97%",
+    flexBasis: "auto"
   }
 }
 
@@ -913,7 +922,15 @@ export const posbuttonsContainerBackground = {
     elevation: 4,
     margin: 10,
     width: "97%",
-    height: "36%"
+    flexBasis: 500,
+    flexShrink: 1
+  }
+}
+
+export const back = {
+  container: {
+    height: 25,
+    width: 50
   }
 }
 export const posbuttonsContainerBackgroundlinked = {
@@ -933,7 +950,8 @@ export const posbuttonsContainerBackgroundA = {
     elevation: 4,
     margin: 10,
     width: "97%",
-    height: "41%"
+    flexBasis: "41%",
+    flexShrink: 1
   }
 }
 

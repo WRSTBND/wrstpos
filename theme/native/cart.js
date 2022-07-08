@@ -10,7 +10,7 @@ export const posCart = {
       backgroundColor: pos.background,
       margin: 0,
       padding: 0,
-      height: "35%",
+      flexBasis: "35%",
       width: "100%"
     }
   }
@@ -30,7 +30,8 @@ export const cashierAccountContainer = {
     backgroundColor: pos.background,
     margin: 0,
     padding: 0,
-    width: "100%"
+    width: "100%",
+    flexBasis: "auto"
   }
 } 
 
@@ -155,7 +156,8 @@ export const posCartDataContainer = {
       backgroundColor: pos.background,
       margin: 0,
       padding: 0,
-      width: "100%"
+      width: "100%",
+      flexBasis: "auto"
   }
 }
 
