@@ -67,7 +67,7 @@ export const posPageFlex = {
 export const payButton = {
   container: {
     borderRadius: 14,
-    backgroundColor: pos.surface,
+    backgroundColor: pos.secondaryLight,
     paddingHorizontal: 23,
     paddingVertical: 12,
     width: "100%",
@@ -89,7 +89,7 @@ export const payButton = {
 export const guestPayButton = {
   container: {
     borderRadius: 14,
-    backgroundColor: pos.surface,
+    backgroundColor: pos.secondaryLight,
     paddingHorizontal: 23,
     paddingVertical: 20,
     borderColor: pos.secondary,
