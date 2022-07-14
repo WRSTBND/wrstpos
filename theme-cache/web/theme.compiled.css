@@ -24058,6 +24058,12 @@ div:not(.table-compact) > .table .th .dropdown-container .dropdown-list {
   margin-left: 20px;
 }
 
+.space-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .region-topbar .mx-navbar ul.nav > li.mx-navbar-item > a {
   color: #f1f1f1;
   font-size: 14px;
