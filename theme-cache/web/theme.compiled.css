@@ -24380,6 +24380,10 @@ div:not(.table-compact) > .table .th .dropdown-container .dropdown-list {
   display: none;
 }
 
+.reported-product .selected {
+  background: #e3af17;
+}
+
 .paymentloader {
   font-size: 11px;
   margin: 70px auto;
@@ -24446,6 +24450,13 @@ div:not(.table-compact) > .table .th .dropdown-container .dropdown-list {
     transform: rotate(360deg);
   }
 }
+.display-box {
+  background-color: #ffffff;
+  border-radius: 14;
+  border-width: 1;
+  border-style: solid;
+}
+
 .backgroundloader,
 .backgroundloader:before,
 .backgroundloader:after {
