@@ -190,6 +190,12 @@ export const keyboard = {
     }
 }
 
+export const keyboardPad = {
+    container: {
+        width: "40%"
+    }
+}
+
 export const editEntitlement = {
     container: {
         width: "95%",
