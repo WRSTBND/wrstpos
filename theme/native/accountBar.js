@@ -41,6 +41,17 @@ export const posAccount = {
       height: 50
     }
   }
+
+  export const payIcon = {
+    image: {
+      resizeMode: "contain",
+      width: 100,
+      height: 100,
+      margin: 20
+    }
+  }
+
+
   
   export const posAccountLinkedNameContainer = {
     container: {
